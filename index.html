@@ -18,16 +18,435 @@
         <meta property="og:image:height" content="627"/>
         <link href="./css/style.less" rel="stylesheet/less" type="text/css"/>
     </head>
-    <body style="display: flex; flex-direction: column; align-items: center;">
+    <body>
+        <div class="container">
+            <img class="logo" src="./img/dotdot.svg">
+        </div>
+        <div class="container container--s typography">
+            <h2>Typography</h2>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>中文 Noto Sans TC</td>
+                    <td>English Roboto</td>
+                </tr>
+                <tr class="xxl">
+                    <td>36px XXL</td>
+                    <td>大標題</td>
+                    <td>LargeTitle</td>
+                </tr>
+                <tr class="xl">
+                    <td>24px XXL</td>
+                    <td>標題</td>
+                    <td>Title</td>
+                </tr>
+                <tr class="l">
+                    <td>18px L</td>
+                    <td>副標題</td>
+                    <td>Headline</td>
+                </tr>
+                <tr class="m">
+                    <td>14px M</td>
+                    <td>內文</td>
+                    <td>Body</td>
+                </tr>
+                <tr class="s">
+                    <td>12px S</td>
+                    <td>註解</td>
+                    <td>Footnote</td>
+                </tr>
+                <tr class="xs">
+                    <td>10px XS</td>
+                    <td>說明</td>
+                    <td>Caption</td>
+                </tr>
+            </table>
+        </div>
+        <div class="container container--s colors">
+            <h2>Colors</h2>
+            <h3>Brand</h3>
+            <div class="items brand">
+                <div class="item">
+                    <div class="color"></div>
+                    <h4>Primary<br><br></h4>
+                    <h5>#FF9900</h5>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h4>Primary<br>Light</h4>
+                    <h5>#FFEED8</h5>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h4>Secondary<br><br></h4>
+                    <h5>#22798C</h5>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h4>Secondary<br>Light</h4>
+                    <h5>#D3E4E8</h5>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h4>Tertiary<br><br></h4>
+                    <h5>#96BE0B</h5>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h4>Tertiary<br>Light</h4>
+                    <h5>#EAF2CE</h5>
+                </div>
+            </div>
+            <h3>B&W</h3>
+            <div class="items bw">
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#000000</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#F2F1F6</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#FFFFFF</span>
+                </div>
+            </div>
+            <h3>Grayscale</h3>
+            <div class="items grayscale">
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#333333</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#4F4F4F</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#828282</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#BDBDBD</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#E0E0E0</span>
+                </div>
+                <div class="item">
+                    <div class="color"></div>
+                    <h5>#F2F2F2</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>UI Components</h2>
+            <div class="items">
+                <!-- Form -->
+                <div class="item">
+                    <h3>Form</h3>
+                    <div class="form">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" placeholder="輸入">
+                        </div>
+                    </div>
+                    <div class="form">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" placeholder="輸入" autofocus>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" value="已輸入">
+                        </div>
+                    </div>
+                    <div class="form form--error">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" value="輸入錯誤">
+                            <img src="./img/form-error.svg">
+                        </div>
+                        <span class="message">錯誤訊息</span>
+                    </div>
+                </div>
+                <!-- Dropdown -->
+                <div class="item">
+                    <h3>Dropdown</h3>
+                    <div class="form form--dropdown">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" placeholder="選擇">
+                            <img src="./img/dropdown-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="form form--dropdown">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" value="已選擇">
+                            <img src="./img/dropdown-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="form form--dropdown">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" value="選擇一・選擇二">
+                            <img src="./img/dropdown-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="title">標題</span>
+                        <a class="close"><img src="./img/dropdown-cross.svg"></a>
+                        <a class="select select--active">
+                            <span>選項1</span>
+                        </a>
+                        <a class="select">
+                            <span>選項2</span>
+                        </a>
+                        <a class="select">
+                            <span>選項3</span>
+                        </a>
+                    </div>
+                    <div class="dropdown dropdown--multi">
+                        <span class="title">標題</span>
+                        <a class="close"><img src="./img/dropdown-cross.svg"></a>
+                        <a class="select select--active">
+                            <img src="./img/dropdown-check.svg">
+                            <span>選項1</span>
+                        </a>
+                        <a class="select select--active">
+                            <img src="./img/dropdown-check.svg">
+                            <span>選項2</span>
+                        </a>
+                        <a class="select">
+                            <img src="./img/dropdown-check.svg">
+                            <span>選項3</span>
+                        </a>
+                        <button>確認</button>
+                    </div>
+                </div>
+                <!-- Upload -->
+                <div class="item">
+                    <h3>Upload</h3>
+                    <div class="form form--upload">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" placeholder="上傳">
+                            <img src="./img/upload.svg">
+                        </div>
+                    </div>
+                    <div class="form form--upload">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" value="檔案名稱.pdf">
+                            <span class="size">100KB</span>
+                            <img src="./img/upload-check.svg">
+                        </div>
+                    </div>
+                    <div class="form form--upload form--error">
+                        <span class="title">標題</span>
+                        <span class="hint">提示</span>
+                        <div class="input">
+                            <input type="text" value="檔案名稱.pdf">
+                            <img src="./img/form-error.svg">
+                        </div>
+                        <span class="message">錯誤訊息</span>
+                    </div>
+                </div>
+                <!-- Toast -->
+                <div class="item">
+                    <h3>Toast</h3>
+                    <div class="toast">
+                        <img src="./img/notice-check.svg">
+                        <div>
+                            <span class="title">成功</span>
+                            <span class="content">通知訊息</span>
+                        </div>
+                    </div>
+                    <div class="toast">
+                        <img src="./img/notice-cross.svg">
+                        <div>
+                            <span class="title">失敗</span>
+                            <span class="content">通知訊息</span>
+                        </div>
+                    </div>
+                    <div class="toast">
+                        <img src="./img/notice-warn.svg">
+                        <div>
+                            <span class="title">警告</span>
+                            <span class="content">通知訊息</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button -->
+                <div class="item">
+                    <h3>Button</h3>
+                    <button class="button">
+                        <span>主按鈕</span>
+                    </button>
+                    <button class="button button--secondary">
+                        <span>次按鈕</span>
+                    </button>
+                </div>
+                <!-- Tabs -->
+                <div class="item">
+                    <h3>Tabs</h3>
+                    <div class="tabs">
+                        <a class="tab tab--active">
+                            <span>選項1</span>
+                        </a>
+                        <a class="tab">
+                            <span>選項2</span>
+                        </a>
+                    </div>
+                    <div class="tabs">
+                        <a class="tab tab--active">
+                            <span>選項1</span>
+                        </a>
+                        <a class="tab">
+                            <span>選項2</span>
+                        </a>
+                        <a class="tab">
+                            <span>選項3</span>
+                        </a>
+                    </div>
+                    <div class="tabs">
+                        <a class="tab tab--active">
+                            <span>選項1</span>
+                        </a>
+                        <a class="tab">
+                            <span>選項2</span>
+                        </a>
+                        <a class="tab">
+                            <span>選項3</span>
+                        </a>
+                        <a class="tab">
+                            <span>選項4</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Switches -->
+                <div class="item">
+                    <h3>Switches</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <label class="check">
+                        <input type="radio" name="radio1" checked> <!-- checked -->
+                        <span class="checkmark radio"></span>
+                        <span class="content">單選</span>
+                    </label>
+                    <label class="check">
+                        <input type="radio" name="radio1"> <!-- checked -->
+                        <span class="checkmark radio"></span>
+                        <span class="content">單選</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox" name="checkbox1" checked> <!-- checked -->
+                        <span class="checkmark checkbox"></span>
+                        <span class="content">多選</span>
+                    </label>
+                    <label class="check">
+                        <input type="checkbox" name="checkbox1"> <!-- checked -->
+                        <span class="checkmark checkbox"></span>
+                        <span class="content">多選</span>
+                    </label>
+                </div>
+                <!-- Popup -->
+                <div class="item">
+                    <h3>Popup</h3>
+                    <div class="popup">
+                        <span class="title title--left">標題</span>
+                        <a class="close"><img src="./img/popup-cross.svg"></a>
+                        <span class="title">標題</span>
+                        <span class="content">內容</span>
+                        <div class="buttons">
+                            <button class="cancel">
+                                <span>取消</span>
+                            </button>
+                            <button>
+                                <span>確認</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <img class="icon" src="./img/notice-check.svg">
+                        <span class="title">標題</span>
+                        <span class="content">內容</span>
+                        <div class="buttons">
+                            <button>
+                                <span>確認</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <img class="icon" src="./img/notice-cross.svg">
+                        <span class="title">標題</span>
+                        <span class="content">內容</span>
+                        <div class="buttons">
+                            <button>
+                                <span>確認</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popup">
+                        <img class="icon" src="./img/notice-warn.svg">
+                        <span class="title">標題</span>
+                        <span class="content">內容</span>
+                        <div class="buttons">
+                            <button class="cancel">
+                                <span>取消</span>
+                            </button>
+                            <button>
+                                <span>確認</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popup popup--urgent">
+                        <img class="icon" src="./img/notice-urgent.svg">
+                        <span class="title">標題</span>
+                        <span class="content">內容</span>
+                        <div class="buttons">
+                            <button class="cancel">
+                                <span>取消</span>
+                            </button>
+                            <button>
+                                <span>確認</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Logos</h2>
+        </div>
         <!-- Loading (class: loading--full / loading--transparent / loading--inline) -->
-        <div class="loading">
+        <!-- <div class="loading">
             <div>
                 <img src="./img/loading1.svg">
                 <img src="./img/loading2.svg">
                 <img src="./img/loading3.svg">
                 <div class="loading__circle"></div>
             </div>
-        </div>
+        </div> -->
         <!-- Script -->
         <script src="./js/less.js" ></script> <!-- Less -->
     </body>
